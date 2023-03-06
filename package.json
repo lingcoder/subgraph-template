@@ -1,0 +1,35 @@
+{
+  "name": "subgraph-template",
+  "description": "This is just a Demo Subgraph",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "git@github.com:lingcoder/subgraph-template.git",
+  "author": "LingCoder",
+  "license": "MIT",
+  "workspaces": [
+    "subgraphs/**/*"
+  ],
+  "scripts": {
+    "codegen": "turbo run codegen",
+    "build": "turbo run build",
+    "format:check": "prettier --check \"*/**/*.{js,ts}\"",
+    "format:write": "prettier --write \"*/**/*.{js,ts}\"",
+    "lint": "eslint \"*/**/*.{js,ts}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
+    "@graphprotocol/graph-cli": "^0.60.0",
+    "@graphprotocol/graph-ts": "^0.31.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "mustache": "^4.2.0",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.16",
+    "typescript": "^5.2.2"
+  }
+}
